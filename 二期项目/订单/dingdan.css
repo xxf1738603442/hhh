@@ -1,0 +1,112 @@
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				width: 390px;
+				height: 844px;
+				box-shadow: 0 0 10px #d0d0d0;
+				margin: 0 auto;
+				background-color: #f3f3f3;
+				overflow: hidden;
+				overflow: scroll;
+				position: relative;
+			}
+			.box::-webkit-scrollbar{
+				width: 1px;
+			}
+			.dingdan{
+				height: 60px;
+				text-align: center;
+				line-height: 60px;
+				background-color: #FFFFFF;
+			}
+			.box_one{
+				height: 150px;
+				background-color: #FFFFFF;
+				padding-left: 20px;
+				padding-right: 20px;
+				padding-top: 20px;
+				margin-bottom: 10px;
+			}
+			
+			#box_one_aj{
+				height: auto;
+				background-color: #FFFFFF;
+				margin-bottom: 10px;
+				
+			}
+			.box_one_aj1{
+				background-color: #FFFFFF;
+				padding-left: 20px;
+				padding-right: 20px;
+				padding-top: 20px;
+				/* margin-bottom: 10px; */
+			}
+			.one{
+				font-size: 8px;
+				color: #969696;
+				float: right;
+			}
+			.two{
+				font-size: 8px;
+				color: #969696;
+				
+			}
+			.three{
+				font-size: 15px;
+				margin-top: 10px;
+			}
+			.for{
+				font-size: 8px;
+				color: #969696;
+				margin-top: 10px;
+			}
+			.five{
+				font-size: 15px;
+				color: #FF3F29;
+				float: right;
+				margin-top: 10px;
+			}
+			.hrr hr{
+				margin-top: 40px;
+				height: 0;
+				border: 1px solid #f3f3f3;
+				background-color: #f3f3f3;
+			}
+			.six{
+				font-size: 12px;
+				font-weight: 900;
+				margin-top: 10px;
+			}
+			.kongge{
+				width: 100%;
+				height: 10px;
+				background-color: #ffffff;
+			}
+			.button_1{
+				font-size: 10px;
+				width: 60px;
+				height: 25px;
+				margin-top: -20px;
+				border-radius: 5px;
+			}
+			button{
+				width: 100px;
+				height: 30px;
+				background-color: #FFFFFF;
+				border: 1px solid #969696;
+				float: right;
+				/* margin-top: 200px; */
+			}
+			#btn{
+				width: 390px;
+				height: 30px;
+				background-color: #009F95;
+				color: white;
+				font-size: 16px;
+				/* margin-right: 535px; */
+				position: absolute;
+				bottom: 0;
+				box-shadow: 0 0 10px #b3b3b3;
+			}

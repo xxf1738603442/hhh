@@ -1,0 +1,271 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.box{
+	background-image: url(img/2.jpg); 
+	background-size: 390px;
+	width: 390px;
+	height: 844px;
+	box-shadow: 0 0 10px #d0d0d0;
+	background-color: #009688;
+	margin: 0 auto;
+	position: relative;
+	transition: all 0.5s;
+}
+
+.box_img{
+	text-align: center;
+	padding-top: 200px;
+	padding-bottom: 20px;
+}
+.box_img img{
+	width: 200px;
+	height: auto;
+}
+.box_1{
+	transition: 0.5s;
+}
+.wei{
+	width: 320px;
+	height: 40px;
+	border: 1px solid #ff0000;
+	margin-left: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #ff0000;
+	line-height: 40px;
+	cursor:pointer;
+	border-radius: 5px;
+}
+.shou{
+	width: 320px;
+	height: 40px;
+	border: 1px solid #ff0000;
+	margin-left: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #ff0000;
+	line-height: 40px;
+	cursor:pointer;
+	border-radius: 5px;
+}
+.kuai{
+	width: 320px;
+	height: 40px;
+	border: 1px solid #ff0000;
+	margin-left: 30px;
+	text-align: center;
+	color: #ff0000;
+	line-height: 40px;
+	cursor:pointer;
+	border-radius: 5px;
+	margin-bottom: 50px;
+}
+.wei:hover{
+	background-color: #ff0000;
+	color: #FFFFFF;
+	transition: 0.5s;
+}
+.shou:hover{
+	background-color: #ff0000;
+	color: #FFFFFF;
+	transition: 0.5s;
+}
+.kuai:hover{
+	background-color: #ff0000;
+	color: #FFFFFF;
+	transition: 0.5s;
+}
+.box_2 hr{
+	display: inline-block;
+	width: 100px;
+	margin: 5px 20px;
+}
+.box_2 div{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #515151;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	margin: 20px 20px;
+	cursor:pointer;
+}
+
+.box_2 img{
+	width: 35px;
+	height: auto;
+	text-align: center;
+}
+
+
+/* 微信页*/
+.weixin{
+	display: inline-block;
+	width: 390px;
+	height: 844px;
+	background-color: #ffffff;
+	position: absolute;
+	top: 0;
+	text-align: center;
+	backface-visibility: hidden;
+	transform: rotateY(-180deg);
+	transition: all 0.5s;
+}
+.fanhui{
+	width: 100px;
+	height: 30px;
+	font-size: 16px;
+	font-weight: 500;
+	/* border: 1px solid #000000; */
+	line-height: 30px;
+	margin-top: 100px;
+	cursor:pointer;
+	border-radius: 5px;
+	background-image: linear-gradient(to right, #a8ff78, #00c996);
+	color: #FFFFFF;
+}
+.wei_img{
+	padding-top: 50px;
+}
+.wei_img>span{
+	margin-left: 20px;
+	position: relative;
+	bottom: 15px;
+}
+
+.wei_sp{
+	font-size: 26px;
+	font-weight: 900;
+	margin-top: 20px;
+}
+.wei_fu{
+	margin-top: 20px;
+}
+.wei_fu>img{
+	width: 250px;
+	height: auto;
+}
+
+
+/* 手机号 */
+.sj{
+	width: 390px;
+	height: 844px;
+	background-image: url(./img/5.jpg);
+	background-size: 390px;
+	position: absolute;
+	top: -610px;
+	backface-visibility: hidden;
+	transform: rotateY(-180deg);
+	transition: all 0.5s;
+	position: relative;
+}
+.duan{
+	display: inline-block;
+	position: absolute;
+}
+.fanhui1{
+	width: 100px;
+	height: 30px;
+	font-size: 16px;
+	font-weight: 500;
+	/* border: 1px solid #000000; */
+	line-height: 30px;
+	margin-top: 100px;
+	cursor:pointer;
+	border-radius: 5px;
+	background-image: linear-gradient(to right, #a8ff78, #00c996);
+	color: #FFFFFF;
+}
+.sj_img{
+	margin-bottom: 50px;
+}
+.sj_img img{
+	width: 30px;
+	height: auto;
+	margin-left: 180px;
+	margin-right: 10px;
+	margin-top: 100px;
+	cursor:pointer;
+}
+.sj_img span{
+	color: #515151;
+	position: relative;
+	bottom: 10px;
+	cursor:pointer;
+}
+.duan>input{
+	width: 300px;
+	height: 40px;
+	outline: none;
+	margin-bottom: 20px;
+	margin-left: 45px;
+}
+.deng{
+	width: 300px;
+	height: 40px;
+	background-color: #ff0000;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 40px;
+	margin-left: 45px;
+	margin-top: 20px;
+}
+.qing{
+	font-size: 8px;
+	color: #ff0000;
+	margin-left: 275px;
+	display: none;
+}
+/* 验证码 */
+.sj>.yan{
+	display: inline-block;
+	margin-bottom: 500px;
+	position: absolute;
+	right: 0px;
+	top: 130px;
+	display: none;
+}
+.yan>input{
+	width: 300px;
+	height: 40px;
+	outline: none;
+	margin-bottom: 20px;
+	margin-left: 45px;
+}
+.yan>.inp_2{
+	width: 172px;
+	height: 40px;
+}
+.yan>.yanz{
+	display: inline-block;
+	width: 120px;
+	height: 40px;
+	border: 1px solid #ff0000;
+	position: relative;
+	top: 1px;
+	text-align: center;
+	line-height: 40px;
+	cursor:pointer;
+	color: #ff0000;
+}
+.sj_img1{
+	margin-bottom: 50px;
+}
+.sj_img1 img{
+	width: 30px;
+	height: auto;
+	margin-left: 180px;
+	margin-right: 10px;
+	margin-top: 100px;
+	cursor:pointer;
+}
+.sj_img1 span{
+	color: #515151;
+	position: relative;
+	bottom: 10px;
+	cursor:pointer;
+}

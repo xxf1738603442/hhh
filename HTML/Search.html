@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索</title>
+    <link rel="stylesheet" href="../CSS/Search.css">
+    <script src="../jquery/jquery-3.3.1.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="../imgx/logo.png">
+
+</head>
+<body>
+    <div id="box">
+    <div id="box1">
+        <input type="text" id="ssk" placeholder="23考研暑假抢分">
+        <a href="#">搜索</a>
+    </div>
+    <div class="show" id="show"></div>
+    <p id="wb1">热门搜索</p>
+    <ul id="ul1">
+        <li>&nbsp; &nbsp揭秘商业配音的奥秘&nbsp; &nbsp</li>
+        <li>&nbsp; &nbsp立刻开始声音变现&nbsp; &nbsp</li>
+        <li>&nbsp; &nbsp插画&nbsp; &nbsp</li>
+        <li>&nbsp; &nbsp绘画&nbsp; &nbsp</li>
+        <li>&nbsp; &nbsp版式设计&nbsp; &nbsp</li>
+    </ul>
+
+    <script>
+        var arr=["摄影课程","我的酱豆腐","欣知大数据","免租期","大叔级数据","欣知数据","枯木三道","学习资料","教育培训","课程练习","版式设计","JetBrains IDE全新UI预览版","插画","立刻开始声音变现","揭秘商业配音的奥秘","用户说明","阿斯达克","拉萨肥肉","计算机速度","不下载编程",]
+        var input=document.getElementById("ssk");
+        var show=document.getElementById("show");
+        input.onkeyup=function(){
+            show.style.display="block";
+            var str="";
+				arr.forEach(function(item){
+					var res= item.indexOf(input.value);
+					if(res!=-1){
+						str+="<p>"+item+"</p>"
+					}
+				})
+				//如果input.value为空或者str为flase 给用户一个提示
+				if(!input.value||!str){
+					show.innerHTML="<p>没有查询到要寻找的信息</p>";
+				}else{
+					show.innerHTML=str;
+				}
+			}
+            input.onblur=function(){
+				show.style.display="none";
+				input.value="";
+			}
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

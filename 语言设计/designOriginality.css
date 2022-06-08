@@ -1,0 +1,65 @@
+*{margin: 0;padding: 0;list-style: none;}
+/* body{background-color: rgb(255, 255, 255);} */
+#sjbigbox{background-color: rgb(255, 255, 255);width: 390px;height:844px;margin: 0 auto;position: relative;box-shadow: 0 0 10px #d0d0d0;padding: 10px;}
+img{width: 130px;height: 90px;}
+
+/* 筛选字体 */
+.sjfilterbox{color:rgb(153, 153, 153);font-size: 16px;position: fixed;width: 390px;height: 35px;line-height: 35px;background-color: rgb(255, 255, 255);top: 0;z-index: 5;}
+.sjall{text-align: center;font-size: 16px;}
+.sjall>.sjqb{width: 35px;height: 35px;line-height: 35px;background-color: rgb(255, 255, 255);position: absolute;top: 0px;right: 125px;color: red;}
+/* 箭头 */
+.sjall>.sjalljt{color: red;position: absolute;top: 0px;left: 265px;font-weight: 900;font-size: 20px;display: none;}
+.sjall>.sjalljtx{display: block;}
+
+.sjall>.sjalltext{width: 390px;background-color: rgb(255, 255, 255);position: absolute;right: 0px;display: none;}
+.sjall li:hover{background-color: rgb(217, 217, 217);}
+
+/* 排序 */
+#sjcontent{background-color: white;}
+.sjfilterbox>.sjpx{display: inline-block;margin-left: 280px;position: absolute;top: 0;}
+.sjsort>.sjzr{width: 35px;height: 35px;line-height: 35px;background-color: rgb(255, 255, 255);position: absolute;top: 0px;right: 20px;text-align: center;font-size: 16px;color: red;}
+/* .sort{width: 100px;height: 30px;background-color: blue; display: inline-block;position: absolute;left: 154px;color: red;width: 390px;text-align: center;font-size: 15px;} */
+.sjsort>.sjsorttext{width: 390px;background-color: rgb(255, 255, 255);position: absolute;right: 0px;display: none;text-align: center;}
+.sjsort li:hover{background-color: rgb(217, 217, 217);}
+/* 箭头 */
+.sjsort>.sjsortjt{color: red;position: absolute;top: 0px;left: 370px;font-weight: 900;font-size: 16px;display: none;}
+.sjsort>.sjsortjtx{display: block;}
+
+
+
+
+/* 数据 */
+#sjcontent{width: 100%;height:809px;background-color: rgb(192, 192, 192);position: relative;top: 20px;overflow: auto;}
+/* 隐藏滚动条不显示 修改滚动条样式
+通过-webkit-scrollbar属性 */
+#sjcontent::-webkit-scrollbar{
+    width: 0px;
+   }
+/* 免费 */
+#sjcontent>.sjcourse{width:100%;height: 120px;background-color: rgb(255, 255, 255);border-bottom: 2px solid rgb(227, 227, 227);}
+#sjcontent>.sjcourse>.sjfreeimage{position: absolute;float: left;margin-top: 15px;border-radius: 5%;}
+#sjcontent>.sjcourse>.sjfreetext{width: 249px;background-color: rgb(255, 255, 255);float: left;margin-left:140px;margin-top: 15px;font-size: 16px;}
+#sjcontent>.sjcourse>.sjpentagram{margin-left: 140px;font-size: 1px;color:rgba(255, 191, 0, 0.993);float: left;}
+#sjcontent>.sjcourse>.sjfreepopulation{margin-left: 195px;font-size: 12px;color: #ccc;}
+#sjcontent>.sjcourse>.sjfree{margin-left: 140px;font-size: 17px;}
+
+/* 收费 */
+#sjcontent>.sjcourse2{width:100%;height: 120px;background-color: rgb(255, 255, 255);border-bottom: 2px solid rgb(227, 227, 227);}
+#sjcontent>.sjcourse2>.sjchargeimage{position: absolute;float: left;margin-top: 15px;border-radius: 5%;}
+#sjcontent>.sjcourse2>.sjchargetext{width: 249px;background-color: rgb(255, 255, 255);float: left;margin-left:140px;margin-top: 15px;font-size: 16px;}
+#sjcontent>.sjcourse2>.sjpentagram{margin-left: 140px;font-size: 1px;color:rgba(255, 191, 0, 0.993);float: left;}
+#sjcontent>.sjcourse2>.sjchargepopulation{margin-left: 195px;font-size: 12px;color: #ccc;}
+#sjcontent>.sjcourse2>.sjcharge{margin-left: 140px;font-size: 17px;color: red;font-weight: 900;}
+
+
+/* 会员 */
+#sjcontent>.sjcourse3{width:100%;height: 140px;background-color: rgb(255, 255, 255);border-bottom: 2px solid rgb(227, 227, 227);}
+#sjcontent>.sjcourse3>.sjvipimage{position: absolute;float: left;margin-top: 15px;border-radius: 5%;}
+#sjcontent>.sjcourse3>.sjviptext{width: 249px;background-color: rgb(255, 255, 255);float: left;margin-left:140px;margin-top: 15px;font-size: 16px;}
+#sjcontent>.sjcourse3>.sjpentagram{margin-left: 140px;font-size: 1px;color:rgba(255, 191, 0, 0.993);float: left;}
+#sjcontent>.sjcourse3>.sjchargepopulation{margin-left: 195px;font-size: 12px;color: #ccc;}
+#sjcontent>.sjcourse3>.sjcharge{margin-left: 140px;font-size: 17px;color: red;font-weight: 900;}
+#sjcontent>.sjcourse3>.sjvip{margin-top: 3px;margin-left: 140px;font-size: 14px;color: rgb(255, 204, 0);background-color: black;width: 30px;height: 15px;line-height: 15px;text-align: center;border-radius:10% 0 0 10%;}
+#sjcontent>.sjcourse3>.sjvipcharge{margin-left: 170px;font-size: 14px;width: 50px;height: 13px;text-align: center;line-height: 13px;border: 1px solid black;margin-top: -15px;border-radius:0 10% 10% 0;}
+
+

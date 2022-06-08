@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品与运营</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../swiper-7.4.1/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../swiper-7.4.1/swiper/swiper-bundle.min.css">
+
+    <script src="../JS/wangyiyun.js"></script>
+    <link rel="icon" type="image/x-icon" href="../imgx/logo.png">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .swiper-slide {
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+
+        .swiper-wrapper {
+            margin-bottom: 5px;
+            position: relative;
+
+        }
+
+        .top {
+            width: 92%;
+            height: 51px;
+            position: relative;
+            margin: 0 auto;
+            border-bottom: 1px solid #E6EAF2;
+
+        }
+
+        .top>img {
+            width: 180px;
+            height: 35px;
+            margin-top: 10px;
+        }
+
+        .icon1 {
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            right: 5px;
+            top: 15px;
+        }
+
+        #dadiv {
+            width: 390px;
+            height: 844px;
+            background-color: white;
+            margin: 0 auto;
+            overflow: auto;
+            box-shadow: 0 0 10px #d0d0d0;
+            overflow: scroll;
+        }
+        #dadiv::-webkit-scrollbar{
+            width: 1px;
+        }
+        #dadiv ul {
+            position: relative;
+            width: 130%;
+
+        }
+
+        
+
+        li {
+            list-style: none;
+            display: inline-block;
+            overflow: hidden;
+
+        }
+
+        .ad {
+            height: 100px;
+        }
+
+        .cd font {
+            color: #3C4A55;
+        }
+
+        .img1 img {
+            width: 175px;
+            margin-left: 1px;
+        }
+
+        .img2 img {
+            width: 175px;
+            margin-left: 1px;
+        }
+
+        .img3 img {
+            width: 175px;
+            margin-left: 1px;
+        }
+
+        .siz {
+            width: 175px;
+            height: 15px;
+        }
+
+        .siz1 {
+            width: 175px;
+            position: relative;
+            left: 194px;
+            top: -15px;
+        }
+
+        .href div {
+            width: 65px;
+            height: 30px;
+            border: 1px solid #8891A7;
+            border-radius: 30px;
+            float: left;
+            margin: 3px 10px;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        #yc {
+            display: none;
+        }
+
+        #yc1 {
+            display: none;
+        }
+
+        #yc2 {
+            display: none;
+        }
+
+        #it {
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+        }
+
+        .hrr,
+        .hrr1,
+        .hrr2 {
+            border-style: none;
+            color: #8891A7;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .gd {
+            position: relative;
+            left: 310px;
+            top: -20px;
+            color: red;
+            border-style: none;
+            text-decoration: none;
+        }
+
+        .swiper-wrapper {
+            position: relative;
+        }
+
+        .swiper-slide:hover {
+            cursor: pointer;
+        }
+
+        i {
+            width: 80px;
+            margin-left: 6px;
+            height: 3px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: orangered;
+            z-index: 5;
+            display: none;
+        }
+        .swiper-slide{
+            display: inline-block;
+            text-align: center;
+            /* border-bottom: 3px solid orangered; */
+        }
+        .inner{
+            padding-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 大div -->
+    <div id="dadiv">
+        <div class="top">
+            <img src="../imgx/1.png" alt="">
+            <svg t="1653553352937" class="icon1" viewBox="0 0 1024 1024" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" p-id="4403" width="32" height="32">
+                <path
+                    d="M449.408 64a385.408 385.408 0 0 1 294.272 634.24L960 914.56l-45.44 45.44-216.32-216.32A385.408 385.408 0 1 1 449.408 64z m0 64.256a321.152 321.152 0 1 0 0 642.304 321.152 321.152 0 0 0 0-642.304z"
+                    p-id="4404" fill="#999999"></path>
+            </svg>
+
+        </div>
+        <div class="swiper mySwiper" >
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">有道英语</div>
+                <div class="swiper-slide">兴趣技能</div>
+                <div class="swiper-slide">大学考试</div>
+                <div class="swiper-slide">职场考证</div>
+                <div class="swiper-slide">IT互联网</div>
+                <div class="swiper-slide">职场提升</div>
+                <div class="swiper-slide">设计创作</div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+
+                <!-- <i></i> -->
+            </div>
+        </div>
+
+        <br>
+        <!-- 需要隐藏的 -->
+        <div id="yc">
+            <div class="href">
+                <div><a href="" class="hrr">编程语言</a></div>
+                <div><a href="" class="hrr">前端开发</a></div>
+                <div><a href="" class="hrr">后端开发</a></div>
+                <div><a href="" class="hrr">互联网运营</a></div>
+                <div><a href="" class="hrr">互联网产品</a></div>
+            </div>
+            <div class="ad">
+
+            </div>
+            <div  class="inner">
+                <div class="cd">
+                    <font>编程语言</font>
+                </div>
+                <br>
+                <div class="img1 mg1"></div>
+                <div class="img2 mg2"></div> <br>
+                <div class="img3 mg3"></div>
+            </div>
+            <br>
+            <!-- 标签与图片链接 -->
+            <div  class="inner">
+                <div class="cd">
+                    <font>产品策划与运营</font>
+                </div>
+                <br>
+                <div class="img1 mg4"></div>
+                <br>
+                <div class="img2 mg5"></div>
+                <!-- 标签与图片链接 -->
+            </div>
+            <!-- 需要隐藏的 -->
+        </div>
+        <!-- ------------------------------------------------------------- -->
+        <div id="yc1">
+            <div class="href">
+                <div><a href="" class="hrr1">PPT</a></div>
+                <div><a href="" class="hrr1">效率工具</a></div>
+                <div><a href="" class="hrr1">求职准备</a></div>
+                <div><a href="" class="hrr1">职场能力</a></div>
+                <div><a href="" class="hrr1">Execl</a></div>
+                <div><a href="" class="hrr1">个人提升</a></div>
+                <div><a href="" class="hrr1">商业管理</a></div>
+            </div>
+            <div class="ad">
+
+            </div>
+            <div class="inner">
+                <div class="cd">
+                    <font>品质精选</font>
+                </div>
+                <br>
+                <div class="img1 mg6"></div>
+                <br>
+                <div class="img2 mg7"></div>
+                <br>
+                <div class="img3 mg8"></div>
+            </div>
+        </div>
+
+        <!-- ------------------------------------------------------ -->
+        <div id="yc2" >
+            <div class="href">
+                <div><a href="" class="hrr2">设计软件</a></div>
+                <div><a href="" class="hrr2">UI设计</a></div>
+                <div><a href="" class="hrr2">平面设计</a></div>
+                <div><a href="" class="hrr2">工业设计</a></div>
+                <div><a href="" class="hrr2">摄影后期</a></div>
+                <div><a href="" class="hrr2">视频后期</a></div>
+                <div><a href="" class="hrr2">摄影基础</a></div>
+                <div><a href="" class="hrr2">手机摄影</a></div>
+            </div>
+            <div class="ad">
+
+            </div>
+            <div  class="inner">
+                <br>
+                <div class="cd">
+                    <font>设计软件精选</font>
+                </div>
+                <a href="#" class="gd">更多></a>
+                <br>
+                <div class="img1 mg9"></div>
+                <br>
+                <div class="img2 mg10"></div>
+                <br>
+                <div class="img3 mg11"></div>
+            </div>
+            <br>
+
+            <div class="cd">
+                <font>平面设计精选</font>
+            </div>
+            <a href="#" class="gd">更多></a>
+            <br>
+            <div class="img1 mg12"></div>
+            <br>
+            <div class="img2 mg13"></div>
+            <br>
+            <div class="img3 mg14"></div>
+
+            <br>
+            <div class="cd">
+                <font>产品设计精选</font>
+            </div>
+            <a href="#" class="gd">更多></a>
+            <br>
+            <div class="img1 mg15"></div>
+            <br>
+            <div class="img2 mg16"></div>
+            <br>
+            <div class="img3 mg17"></div>
+            <br>
+            <div class="cd">
+                <font>摄影及后期精选</font>
+            </div>
+            <a href="#" class="gd">更多></a>
+            <br>
+            <div class="img1 mg18"></div>
+            <br>
+            <div class="img2 mg19"></div>
+            <br>
+            <div class="img3 mg20"></div>
+            <br>
+            <div class="cd">
+                <font>视频及后期精选</font>
+            </div>
+            <a href="#" class="gd">更多></a>
+            <br>
+            <div class="img1 mg21"></div>
+            <br>
+            <div class="img2 mg22"></div>
+            <br>
+            <div class="img3 mg23"></div>
+        </div>
+        <!-- 大div -->
+    </div>
+    <!-- 需要隐藏的 -->
+    </div>
+
+    </div>
+
+    <!-- Swiper JS -->
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            watchSlidesProgress: true,
+            slidesPerView: 5,
+        });
+
+        let tz=document.querySelectorAll(".inner div");
+    // console.log(tz);
+    for(let i=0;i<tz.length;i++){
+        tz[i].onclick=function(){
+            location.href="../网易云课堂.mp4/wangyiyb.html"
+        }
+    }
+    $(".top").click(function(){
+          location.href="../../首页.html"
+      })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="shopp.css"/>
+		<script src="../jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="shopp.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="icon" type="image/x-icon" href="../../imgx/logo.png">
+		<style>
+			.top{
+					width: 100%;
+					height: 51px;
+					position: relative;
+					border-bottom: 1px solid #E6EAF2;
+				}
+				.top>img{
+					width: 170px;
+					height: 33px;
+					margin-top: 10px;
+				}
+				.icon1{
+					width: 20px;
+					height: 20px;
+					position: absolute;
+					right: 10px;
+					top: 15px;
+				}
+		</style>
+
+	</head>
+	<body>
+		<!-- 大盒子 -->
+		<div class="box">
+			<div class="top">
+				<img src="../../imgx/1.png" alt="">
+				<svg t="1653553352937" class="icon1" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4403" width="32" height="32"><path d="M449.408 64a385.408 385.408 0 0 1 294.272 634.24L960 914.56l-45.44 45.44-216.32-216.32A385.408 385.408 0 1 1 449.408 64z m0 64.256a321.152 321.152 0 1 0 0 642.304 321.152 321.152 0 0 0 0-642.304z" p-id="4404" fill="#999999"></path></svg>
+				
+			</div>
+			<!-- 几门课程 -->
+				<div class="heji"><span>共</span><span class="yixuan">0</span><span>门课程</span></div>
+				<!-- 商品区域 -->
+				<div class="hwlsb">
+					
+				</div>
+			
+			<!-- 合计框 -->
+			<div class="box_4">
+				
+				<input type="checkbox"id="inp3"/>
+				<span class="he">合计:￥</span>
+				<span class="he2">0.00</span>
+				<span class="he3">若有优惠，将在订单结算页面减扣</span>
+				<div class="jiesuan">
+					<span>去结算</span>
+				</div>
+			</div>
+			<button type="button" id="btn">获取更多</button>
+		</div>
+
+
+		<script>
+			$(".jiesuan>span").click(function(){
+				location.href="../../我的学习/结算页.html"
+			})
+			
+		$(".top").click(function(){
+			location.href="../../首页.html"
+		})
+		
+		
+	
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,169 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.box{
+	width: 390px;
+	height: 844px;
+	background-color: #ffffff;
+	margin: 0 auto;
+	color: #484848;
+	box-shadow: 0 0 10px #d0d0d0;
+}
+.hwlsb{
+	height: 740px;
+	overflow: hidden;
+	overflow:scroll;
+	border-bottom: 1px solid #000000;
+	
+}
+.hwlsb::-webkit-scrollbar{
+	width: 4px;
+}
+.box_2{
+	height: 150px;
+	margin-bottom: 10px;
+}
+.heji{
+	height: 30px;
+	background-color: #ffffff;
+	font-size: 8px;
+	line-height: 30px;
+	padding-left: 10px;
+	color: #484848;
+}
+.box_1{
+	font-size: 8px;
+	height: 30px;
+	background-color: #f8f9fd;
+	line-height: 30px;
+	padding-left: 10px;
+}
+.inp1{
+	float: left;
+	margin-top: 10px;
+}
+.inp2{
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 8px;
+}
+.box_1>span{
+	float: left;
+	margin-left: 10px;
+}
+
+.box_3 img{
+	display: inline-block;
+	width: 95px;
+	height: auto;
+	padding-top: 10px;
+}
+.name{
+	display: inline-block;
+	font-size: 14px;
+	float: left;
+	margin-left: 140px;
+	margin-top: -60px;
+}
+.yong{
+	display: inline-block;
+	font-size: 8px;
+	float: left;
+	margin-left: 140px;
+	margin-top: -40px;
+}
+.money{
+	font-size: 8px;
+	float: left;
+	margin-left: 140px;
+	margin-top: -24px;
+}
+.delect{
+	display: inline-block;
+	font-size: 14px;
+	width: 35px;
+	float: left;
+	margin-left: 345px;
+	margin-top: -30px;
+	cursor: pointer;
+}
+hr{
+	width: 370px;
+	margin: 0 auto;
+	margin-top: 20px;
+	border: 1px solid #f3f3f3;
+	background-color: #f3f3f3;
+}
+.little{
+	margin-top: 5px;
+	font-size: 14px;
+	float: left;
+	margin-left: 255px;
+}
+.mon{
+	float: left;
+	margin-top: 6px;
+	margin-left: 5px;
+	font-size: 14px;
+	color: #FF3F29;
+}
+
+/* 总计 */
+.box_4{
+	height: 50px;
+	background-color: #fafafa;
+	width: 359px;
+	padding-left: 10px;
+	margin-top: 630px;
+	position: absolute;
+	top: 185px;
+}
+.hwlsb{
+	position: relative;
+}
+
+#inp3{
+	float: left;
+	margin-top: 10px;
+}
+.jiesuan{
+	float: left;
+	margin-left: 300px;
+	margin-top: -38px;
+	width: 80px;
+	height: 50px;
+	background-color: #ced2db;
+	text-align: center;
+	line-height: 50px;
+	color: #FFFFFF;
+}
+.he{
+	font-size: 8px;
+	float: left;
+	margin-left: 210px;
+	margin-top: 5px;
+}
+
+.he2{
+	font-size: 8px;
+	float: left;
+	margin-top: -16px;
+	margin-left: 250px;
+}
+.he3{
+	font-size: 8px;
+	float: left;
+	/* margin-top: 30px; */
+	margin-left: 95px;
+}
+#btn{
+	width: 390px;
+	height: 23px;
+	background-color: #FFFFFF;
+	color: #a1a1a1;
+	border: 0;
+	border-bottom: 1px solid #000000;
+}

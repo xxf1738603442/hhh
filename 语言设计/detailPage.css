@@ -1,0 +1,88 @@
+*{margin: 0;padding: 0;text-decoration: none;}
+      p,span{text-align: center;}
+      /* html, body {width:100%;height:100%;margin:auto;overflow: hidden;} */
+      #bigbox{width:390px;height: 844px;background-color: rgb(255, 255, 255);margin: 0 auto;position: relative;overflow: auto;}
+      /* 视频 */
+      #videobox{width: 390px;height: 200px;}
+      #select{width: 390px;height: 45px;background-color: rgb(255, 255, 255);text-align: center;}
+      .selectxz{width: 100px;background-color: rgb(255, 255, 255);height: 40px;float: left;font-size: 20px;line-height: 40px;margin-left: 22.5px;}
+      /* 下划线 */
+      /* #select>.selectxz:nth-child(1){border-bottom: 2px solid red;} */
+      
+      
+      /* 内容 */
+      /* #content{display: none;} */
+      #content{width: 100%;height: 170px;background-color: rgb(255, 255, 255);position: absolute;margin: 0;border-bottom: 1px solid rgb(164, 162, 162);}
+      #content>.title{font-size: 17px;width: 260px;height: 28px;line-height: 28px;background-color:rgb(255, 255, 255);margin-top: 15px;margin-left: 12px;}
+      #content>.pentacle{color: rgb(255, 183, 0);margin-left: 12px;width: 70px;height: 27px;line-height: 27px;background-color: rgb(255, 255, 255);float: left;}
+      #content>.people{color: #ccc;margin:0px 90px;font-size: 13px;width: 105px;height: 27px;line-height: 27px;background-color: rgb(255, 255, 255);}
+      #content>.viphy{margin-top: 3px;margin-left:12px;width: 60px;height: 25px;background-color: rgba(227, 0, 0, 0.826);color: white;border-radius: 15%;line-height: 25px;float: left;}
+      #content>.price{margin-top: 3px;font-size: 18px;margin-left: 15px;color: red;width: 80px;height: 25px;background-color: rgb(255, 255, 255);float: left;}
+      #content>.serialize{border: 1px solid #ccc;width: 40px;font-size: 15px;color: #ccc;margin-left: 305px;margin-top: -15px;}
+      #content>hr{margin-top: 50px;}
+      #content>.activitybox{background-color: rgb(255, 255, 255);width: 378px;height: 30px;margin-left: 12px;margin-top: 5px;font-size: 13px;line-height: 30px;}
+      #content>.activitybox>.activity>.activitymz{float: left;height: 30px;width: 40px;background-color: rgb(255, 255, 255);color: red;border: 1px solid red;}
+      #content>.activitybox>.activity>.weal{height: 30px;width: 375px;background-color: rgb(255, 255, 255);color: red;}
+
+      /* 课程介绍 */
+      img{width: 390px;height: 580px;}
+      .introduce{width: 100%;margin: 0;}
+
+      /* 课程介绍一下内容,内容小文字（不同类里面的文字） */
+      .font{color: rgb(108, 108, 108);font-size: 14.5px;margin-left: 10px;}
+      .text{font-size: 17px;font-weight: 500;margin-top: -25px;margin-left:  20px;width: 80px;height: 30px;background-color: rgb(255, 255, 255);line-height: 28px;margin-bottom: 5px;text-align: left;}
+      .red{width: 7px;height: 20px;background-color: red;margin-top: 18px;}
+
+      /* 头像 */
+      .provider{width: 390px;height: 120px;background-color: rgb(255, 255, 255);margin: 0;}
+      .provider>img{width: 50px;height: 50px;margin-top: 10px;margin-left: 10px;float: left;}
+      .provider>.name{width: 115px;height: 25px;background-color: rgb(255, 255, 255);margin-top: 20px;font-size: 17px;margin-left: 70px;}
+      .provider>.font{margin-top:5px;width: 90px;height: 20px;background-color: rgb(255, 255, 255);margin-left: 10px;float: left;}
+      .provider>a{margin-left: 150px;color:rgb(108, 108, 108);font-size: 14px;}
+
+      .lecturer>img{width: 50px;height: 50px;margin-top: 10px;margin-left: 10px;float: left;border-radius: 50%;}
+      .lecturer>.name{width: 115px;height: 30px;background-color: rgb(255, 255, 255);margin-top: 20px;font-size: 17px;margin-left: 70px;}
+      .lecturer>.font{margin-left: 70px;background-color: rgb(255, 255, 255);height: 90px;}
+
+      #bigbox::-webkit-scrollbar{
+        width: 0px;
+        height: 0px;
+      }
+
+
+
+      /* 回到顶部 */
+      .db{width: 30px;height: 30px;border-radius: 50%;background-color: rgba(20,20,20,0.3);font-size: 30px;text-align: center;line-height: 25px;margin-left: 350px;}
+
+      
+      /* 评价 */
+      #selectxznr{display: none;}
+      #selectxznr>.evaluate{background-color: rgb(255, 255, 255);width: 100%;;height: 150px;border: 1px solid rgb(255, 255, 255);}
+      #selectxznr>.evaluate>.picture{width: 50px;height: 50px;border-radius: 50%;margin-top: 20px;margin-left: 20px;float: left;}
+      #selectxznr>.evaluate>.screenname{margin-top: 24px;margin-left: 80px;width: 180px;background-color: rgb(255, 255, 255);font-size: 17px;text-align: left;}
+      #selectxznr>.evaluate>.pjname{margin-top: 8px;margin-left: 80px;width: 135px;background-color: rgb(255, 255, 255);font-size: 15px;color: rgb(118, 118, 118);}
+      .pjpentagram{color: rgb(255, 166, 0);margin-left: 300px;width: 75px;background-color: rgb(255, 255, 255);margin-top: -45px;}
+      .pjdate{color:rgb(118, 118, 118);background-color: white;width: 100px;margin-left: 288px;margin-top: 2px;}
+
+      /* 评价 图片*/
+      #selectxznr>p{margin: 5px;width: 70px;height: 25px;background-color: rgb(255, 255, 255);float: left;}
+      #selectxznr>span{width: 90px;height: 25px;background-color: rgb(255, 255, 255);font-size: 15px;color: rgb(118, 118, 118);position: absolute;top: 246px;left: 295px;}
+      #selectxznr>img{width: 350px;height: 60px;margin-left: 20px;}
+      /* 评价文字 */
+      .pjnametext{width: 300px;background-color: rgb(255, 255, 255);text-align: left;margin-left: 80px;margin-top: 12px;font-size: 18px;color:rgb(118, 118, 118)}
+
+
+      /* 目录 */
+      #cataloguebox{display: none;}
+      /* 所有目录标题 */
+      .cataloguebt>p{width: 100%;height: 35px;background-color:rgb(246, 246, 246);line-height: 35px;margin-top: 1px;text-align: left;margin-left: 0px;}
+      /* 目录内容 */
+      .catalogue{width: 390px;height: 40px;margin-top: 2px;border-bottom: 1px solid rgb(246, 246, 246);}
+      .catalogue>.cataloguetw{font-size: 13.5px;width:40px;height: 20px;border: 1px solid rgb(118, 118, 118);line-height: 20px;text-align: center;float: left;margin-left: 18px;margin-top: 10px;}
+      .catalogue>.cataloguenr{font-size: 13.5px;width:300px;height: 20px;line-height: 20px;text-align: center;float: left;margin-left: 18px;margin-top: 10px;text-align: left;}
+      /* 底部 */
+      .xqfooter{width:390px;height: 80px;background-color: white;position: fixed;bottom: 0;display: flex;cursor: pointer;border: 1px solid #ccc;}
+      .xqiconfont>img{width: 40px;height: 40px;margin-left: 40px;}
+      .xqgwc>a>p{color: black;width: 80px;background-color: aqua;margin-left: 20px;}
+      .xqxx{width: 260px;height: 50px;background-color: orange;border-radius: 20%;margin-left: 50px;text-align: center;line-height: 50px;font-size: 20px;color: white;line-height: 50px;}
+      .xqxx>a{color: white;}

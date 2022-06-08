@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport
+        content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="referrer" content="no-referrer">
+    <title>xgplayer</title>
+    <script src="jquery_mini.js"></script>
+    <link rel="icon" type="image/x-icon" href="../imgx/logo.png">
+
+    <style type="text/css">
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li,.lingjuan:hover{
+            cursor: pointer;
+        }
+        #a {
+            width: 390px;
+            height: 844px;
+            margin: 0 auto;
+            overflow: auto;
+            overflow: scroll;
+        }
+
+        #a::-webkit-scrollbar {
+            width: 1px;
+        }
+
+        .b {
+            width: 100%;
+            height: 200px;
+            background-color: rebeccapurple;
+        }
+
+        b {
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        #xxk ul li {
+            list-style: none;
+            display: inline-block;
+            width: 32%;
+            height: 20px;
+            text-align: center;
+            margin: 8px auto;
+        }
+
+        .one {
+            border-bottom: 3px solid red;
+        }
+
+        #aa {
+            border: 1px solid rgb(0, 132, 255);
+            color: rgb(0, 132, 255);
+            text-decoration: none;
+        }
+
+        .tex {
+            display: inline-block;
+            width: 120px;
+            height: 20px;
+            text-align: center;
+            background-color: rgb(255, 94, 0);
+            border-radius: 30px;
+            color: white;
+        }
+
+        .img11 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .img11 img {
+            width: 390px;
+            height: 100%;
+            outline-width: 0px;
+            vertical-align: top;
+        }
+
+        /* .jj{
+           display: none;
+      }  */
+        .ml {
+            display: none;
+        }
+
+        .pj {
+            display: none;
+        }
+
+        /* .btn-block{
+      position: fixed;
+      bottom: 5px;
+     } */
+        .tb img {
+            width: 85px;
+            height: 60px;
+        }
+
+        .tb {
+            width: 390px;
+            height: 50px;
+            position: fixed;
+            bottom: 2px;
+            background-color: white;
+        }
+
+        .zhaop {
+            float: left;
+        }
+
+        .lingjuan {
+            width: 180px;
+            height: 40px;
+            background-color: rgb(255, 94, 0);
+            float: right;
+            margin: 5px 10px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 40px;
+            color: aliceblue;
+        }
+
+        .ml span {
+            display: inline-block;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .mg img {
+            width: 380px;
+        }
+
+        .bj {
+            margin: 8px 1px;
+        }
+
+        .tck {
+            position: relative;
+            top: 180px;
+            display: none;
+        }
+
+        .span {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="a">
+        <div class="b">
+            <div id="mse"></div>
+            <div id="xxk">
+                <ul>
+                    <li class="one">简介</li>
+                    <li>目录</li>
+                    <li>评价</li>
+                </ul>
+            </div>
+            <div class="tb">
+                <div class="zhaop">
+                    <img src="./imgyb/yb6.jpg" alt="">
+                    <img src="./imgyb/yb7.jpg" alt="">
+                </div>
+
+                <div class=" lingjuan">
+                    领劵购买
+                </div>
+            </div>
+            <!-- 简介 -->
+            <div class="jj">
+                <div>
+                    <div id="bb"><b>【3.8万学员】和秋叶一起学Excel</b></div>
+                    <span style="color: rgb(255, 196, 0);">★★★★★</span><span>4.9分</span>
+                    <span style="color: rgb(145, 143, 143);">388831人在学</span>
+                    <span style="color: #70B6F8;
+                border: 1px solid #70B6F8;float: right;">独家</span>
+                    <div class="span"><span>￥169.00</span> &nbsp; <span class="tex">券后价:￥149</span></div>
+                </div><br>
+
+                <div class="yh" style="border-top: 1px solid #E6EAF2;;height:40px;line-height:40px">
+                    <span style="color: red;">优惠</span>
+                    <span>减￥20</span>
+                    <span style="float: right;">></span>
+                </div>
+                <div style="border-top: 1px solid #E6EAF2;;height:40px;line-height:40px">
+                    <span style="color: red;">活动</span>
+                    <span style="color: red;">【福利中心】50元红包、限量会员免费领</span>
+                    <span style="float: right;">></span>
+                </div>
+                <div class="img11">
+                    <img src="./imgyb/yb1.jpg" alt="">
+                    <img src="./imgyb/yb2.jpg" alt="">
+                    <img src="./imgyb/yb3.jpg" alt="">
+                    <img src="./imgyb/yb4.jpg" alt="">
+                    <img src="./imgyb/yb5.jpg" alt="">
+                </div>
+            </div>
+            <!-- 简介 -->
+            <!-- 目录 -->
+            <div class="ml">
+                <div>
+                    <p>微信开发基础技能</p>
+                    <span style="color: #3C4A55;border: 1px solid #3C4A55;">视频</span>
+                    &nbsp;<span>1.第1课【免费】课程介绍</span>
+                    <span style="float: right;color:red;">可试看</span>
+                </div>
+                <div>
+                    <span style="color: #3C4A55;border: 1px solid #3C4A55;">视频</span>
+                    &nbsp;<span>2.第2课&nbsp;了解微信开发及搭建开发环境</span>
+                </div>
+                <div>
+                    <span style="color: #3C4A55;border: 1px solid #3C4A55;">视频</span>
+                    &nbsp;<span>3.第3课&nbsp;SenParc.Weixin设计架构介绍</span>
+                </div>
+                <div>
+                    <span style="color: #3C4A55;border: 1px solid #3C4A55;">视频</span>
+                    &nbsp;<span>4.第4课&nbsp;Senparc.Weixin.SDK介绍</span>
+                </div>
+                <div>
+                    <span style="color: #3C4A55;border: 1px solid #3C4A55;">视频</span>
+                    &nbsp;<span>5.第5课&nbsp;简化消息处理流程(上)</span>
+                </div>
+                <div>
+                    <span style="color: #3C4A55;border: 1px solid #3C4A55;">视频</span>
+                    &nbsp;<span>6.第6课&nbsp;简化消息处理流程(下)</span>
+                </div>
+                <div>
+                    <span style="color: #3C4A55;border: 1px solid #3C4A55;">视频</span>
+                    &nbsp;<span>7.第7课&nbsp;缓存策略及并发场景下的分布式锁</span>
+                </div>
+                <div>
+                    <span style="color: #3C4A55;border: 1px solid #3C4A55;">视频</span>
+                    &nbsp;<span>8.第8课&nbsp;接口调用凭证及数据容器</span>
+                </div>
+                <div>
+                    <span style="color: #3C4A55;border: 1px solid #3C4A55;">视频</span>
+                    &nbsp;<span>9.第9课&nbsp;消息队列</span>
+                </div>
+                <div>
+                    <span style="color: #3C4A55;border: 1px solid #3C4A55;">视频</span>
+                    &nbsp;<span>10.第10课&nbsp;接口调用及数据请求(上)</span>
+                </div>
+                <div>
+                    <span style="color: #3C4A55;border: 1px solid #3C4A55;">视频</span>
+                    &nbsp;<span>11.第11课&nbsp;接口调用及数据请求(下)</span>
+                </div>
+                <div>
+                    <span style="color: #3C4A55;border: 1px solid #3C4A55;">视频</span>
+                    &nbsp;<span>12.第12课&nbsp;Debug模式及异常处理</span>
+                </div>
+                <div>
+                    <span style="color: #3C4A55;border: 1px solid #3C4A55;">视频</span>
+                    &nbsp;<span>13.第13课&nbsp;公众号模板消息:管理</span>
+                </div>
+                <div>
+                    <span style="color: #3C4A55;border: 1px solid #3C4A55;">视频</span>
+                    &nbsp;<span>14.第14课&nbsp;公众号模板消息:使用</span>
+                </div>
+                <div>
+                    <span style="color: #3C4A55;border: 1px solid #3C4A55;">视频</span>
+                    &nbsp;<span>15.第15课&nbsp;JS-SDK:配置</span>
+                </div>
+                <div>
+                    <span style="color: #3C4A55;border: 1px solid #3C4A55;">视频</span>
+                    &nbsp;<span>16.第16课&nbsp;JS-SDK:使用</span>
+                </div>
+                <div>
+                    <span style="color: #3C4A55;border: 1px solid #3C4A55;">视频</span>
+                    &nbsp;<span>17.第17课&nbsp;微信支付申请</span>
+                </div>
+                <div>
+                    <span style="color: #3C4A55;border: 1px solid #3C4A55;">视频</span>
+                    &nbsp;<span>18.第18课&nbsp;微信支付配置</span>
+                </div>
+                <div>
+                    <span style="color: #3C4A55;border: 1px solid #3C4A55;">视频</span>
+                    &nbsp;<span>19.第19课&nbsp;了解微信开发及搭建开发环境</span>
+                </div>
+                <div>
+                    <span style="color: #3C4A55;border: 1px solid #3C4A55;">视频</span>
+                    &nbsp;<span>19.第20课&nbsp;了解微信开发及搭建开发环境</span>
+                </div>
+                <div>
+                    <span style="color: #3C4A55;border: 1px solid #3C4A55;">视频</span>
+                    &nbsp;<span>21.第21课&nbsp;了解微信开发及搭建开发环境</span>
+                </div>
+                <div>
+                    <span style="color: #3C4A55;border: 1px solid #3C4A55;">视频</span>
+                    &nbsp;<span>22.第22课&nbsp;了解微信开发及搭建开发环境</span>
+                </div>
+                <div>
+                    <span style="color: #3C4A55;border: 1px solid #3C4A55;">视频</span>
+                    &nbsp;<span>23.第23课&nbsp;了解微信开发及搭建开发环境</span>
+                </div>
+            </div>
+            <!-- 目录 -->
+            <!-- 评价 -->
+            <div class="pj">
+                <div class="mg">
+                    <img src="./imgyb/yb8.jpg" alt="">
+                    <img src="./imgyb/yb9.jpg" alt="">
+                    <img src="./imgyb/yb10.jpg" alt="">
+                </div>
+            </div>
+            <!-- 评价 -->
+            <!-- 优惠 -->
+            <!-- <div class="tck">
+            <div style="border-bottom: 1px solid rgb(138, 132, 132);">本课程可用</div>
+           <div class="bj" style="border-bottom:1px dotted rgb(138, 132, 132);"><span style="color: red;">￥10元&nbsp;</span><span>无金额门槛</span><span style="border: 1px solid rgb(255, 94, 0);float: right;color: rgb(255, 94, 0);">领取</span>
+           <br>
+           <span>使用范围:本讲师/机构的所有课程</span>
+           <br>
+           <span>有效时间:2022.05.26-2022.5.31</span>
+        </div>
+        <div class="bj" style="border-bottom:1px dotted rgb(138, 132, 132);"><span style="color: red;">￥20元&nbsp;</span><span>满￥169可用</span><span style="border: 1px solid rgb(255, 94, 0);float: right;color: rgb(255, 94, 0);">领取</span>
+            <br>
+            <span>使用范围:本讲师/机构的所有课程</span>
+            <br>
+            <span>有效时间:2022.05.24-2022.5.31</span>
+         </div>
+         <div class="bj" style="border-bottom:1px dotted rgb(138, 132, 132);"><span style="color: red;">￥30元&nbsp;</span><span>满￥199可用</span><span style="border: 1px solid rgb(255, 94, 0);float: right;color: rgb(255, 94, 0);">领取</span>
+            <br>
+            <span>使用范围:本讲师/机构的所有课程</span>
+            <br>
+            <span>有效时间:2022.05.26-2022.5.31</span>
+         </div>
+        </div> -->
+            <!-- 优惠 -->
+        </div>
+    </div>
+    <script src="//unpkg.byted-static.com/xgplayer/2.31.6/browser/index.js" charset="utf-8"></script>
+    <script>
+        let player = new Player({
+            "id": "mse",
+            "url": "//lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/byted-player-videos/1.0.0/xgplayer-demo.mp4",
+            "playsinline": true,
+            "whitelist": [
+                ""
+            ],
+            "width": null,
+            "height": null
+        });
+
+        $(function () {
+            $("#xxk ul li").click(function () {
+                $(this).addClass("one").siblings().removeClass("one");
+            })
+            $("#xxk ul li").eq(0).click(function () {
+                $(".jj").show();
+                $(".ml").hide();
+                $(".pj").hide();
+            })
+            $("#xxk ul li").eq(1).click(function () {
+                $(".jj").hide();
+                $(".pj").hide();
+                $(".ml").show();
+            })
+            $("#xxk ul li").eq(2).click(function () {
+                $(".pj").show();
+                $(".jj").hide();
+                $(".ml").hide();
+            })
+            // $(".yh").click(function(){
+            //     $(".tck").show();
+
+            // })
+            $(".zhaop img").eq(1).click(function () {
+                location.href = "../二期项目/购物车/shopp.html"
+            })
+            $(".lingjuan").click(function () {
+                location.href = "../二期项目/购物车/shopp.html"
+            })
+        })
+    </script>
+</body>
+
+</html>

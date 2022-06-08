@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>语言学习</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <script src="languageStudy.js"></script>
+    <link rel="stylesheet" href="languageStudy.css">
+    <link rel="icon" type="image/x-icon" href="../imgx/logo.png">
+
+    
+</head>
+<body>
+    <div id="bigbox">
+        <div class="filterbox">
+            <!-- amount  每个课程数量 -->
+            <span class="num">共<span class="amount">904</span>门相关课程
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                筛选:</span>
+
+                <div class="all"><span class="qb">全部</span>
+                    <!-- 箭头 -->
+                    <span class="alljt alljtx">∨</span>
+                    <span class="alljt alljts">∧</span>
+
+                    <ul class="alltext">
+                        <li value="" class="allqb">全部</li>
+                        <li value="" class="allmf">免费</li>
+                        <li value="" class="allsf">收费</li>
+                        <li value="" class="allvip">只看VIP会员</li>
+                    </ul>
+                </div>    
+
+                <span class="px">|&nbsp;&nbsp;排序：</span>
+
+                <div class="sort"><span class="zr">最热</span>
+                    <!-- 箭头 -->
+                    <span class="sortjt sortjtx">∨</span>
+                    <span class="sortjt sortjts">∧</span>
+                    
+                    <ul class="sorttext">
+                        <li value="" class="sortzr">最热</li>
+                        <li value="" class="sortzx">最新</li>
+                        <li value="" class="sortxh">最喜欢</li>
+                    </ul>
+                </div>
+        </div>
+
+
+        <div id="content"><!--contents 内容 --></div>
+    </div>
+    <script>
+        
+        var obj;
+        // jQuery的ajax格式
+        $.ajax({
+            'url':'./languageStudy.json',
+            dataType:'json',
+            type:'GET',
+            async:false,
+            success:function(list){
+                obj=list;
+            }
+        })
+            console.log(obj);
+
+
+        // 遍历添加图片
+        for(var i=0;i<50;i++){
+            content.innerHTML+=
+        // pictures  图片
+        // course课程
+
+        // 免费内容
+        `
+            <div class="course mf"> 
+                <img class="freeimage" src="${obj.freeimage[i]}">
+                <p class="freetext">${obj.freetext[i]}</p>
+                <p class="pentagram">${obj.pentagram[i]}</p>
+                <p class="freepopulation">${obj.freepopulation[i]}</p>
+                <p class="free">${obj.free[i]}</p>
+                
+            </div>
+
+            <div class="course2 sf"> 
+                <img class="chargeimage" src="${obj.chargeimage[i]}">
+                <p class="chargetext">${obj.chargetext[i]}</p>
+                <p class="pentagram">${obj.pentagram[i]}</p>
+                <p class="chargepopulation">${obj.chargepopulation[i]}</p>
+                <p class="charge">${obj.charge[i]}</p>
+                
+            </div>
+
+            <div class="course3 hy"> 
+                <img class="vipimage" src="${obj.vipimage[i]}">
+                <p class="viptext">${obj.viptext[i]}</p>
+                <p class="pentagram">${obj.pentagram[i]}</p>
+                <p class="chargepopulation">${obj.chargepopulation[i]}</p>
+                <p class="charge">${obj.charge[i]}</p>
+                <div class="vip">${obj.vip[i]} </div>
+                <div class="vipcharge">${obj.vipcharge[i]} </div>
+            </div>     
+            
+        `        
+        
+}
+
+    </script>
+</body>
+</html>

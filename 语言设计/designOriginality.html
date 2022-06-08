@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设计创意</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="designOriginality.js"></script>
+
+    <link rel="stylesheet" href="designOriginality.css">
+    <link rel="icon" type="image/x-icon" href="../imgx/logo.png">
+
+</head>
+<body>
+    <div id="sjbigbox">
+        <div class="sjfilterbox">
+            <span class="sjnum">共<span class="sjamount">725</span>门相关课程
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                筛选:</span>
+
+                <!-- <div>
+                    <a href="">全部</a>
+                    <a href="">免费</a>
+                    <a href="">收费</a>
+                    <a href="">只看VIP会员</a>
+                </div> -->
+                <!-- ︿﹀ ∧∨-->
+                <div class="sjall"><span class="sjqb">全部</span>
+                    <!-- 箭头 -->
+                    <span class="sjalljt sjalljtx">∨</span>
+                    <span class="sjalljt sjalljts">∧</span>
+
+                    <ul class="sjalltext">
+                        <li value="" class="sjallqb">全部</li>
+                        <li value="" class="sjallmf">免费</li>
+                        <li value="" class="sjallsf">收费</li>
+                        <li value="" class="sjallvip">只看VIP会员</li>
+                    </ul>
+                </div>    
+
+                <span class="sjpx">|&nbsp;&nbsp;排序：</span>
+
+                <div class="sjsort"><span class="sjzr">最热</span>
+                    <!-- 箭头 -->
+                    <span class="sjsortjt sjsortjtx">∨</span>
+                    <span class="sjsortjt sjsortjts">∧</span>
+
+                    <ul class="sjsorttext">
+                        <li value="" class="sjsortzr">最热</li>
+                        <li value="" class="sjsortzx">最新</li>
+                        <li value="" class="sjsortxh">最喜欢</li>
+                    </ul>
+                </div>
+        </div>
+
+        <div id="sjcontent"><!--contents 内容 --></div>
+    </div>
+    <script>
+
+        var obj;
+        // jQuery的ajax格式
+        $.ajax({
+            'url':'./designOriginality.json',
+            dataType:'json',
+            type:'GET',
+            async:false,
+            success:function(list){
+                obj=list;
+            }
+        })
+            console.log(obj);
+        // 遍历添加图片
+        var number=0;
+            // load 加载
+
+            for(var i=0;i<50;i++){
+                sjcontent.innerHTML+=
+            // pictures  图片
+            // course课程
+
+            // 免费内容
+                `
+                <div class="sjcourse sjmf"> 
+                    <img class="sjfreeimage" src="${obj.sjfreeimage[i]}">
+                    <p class="sjfreetext">${obj.sjfreetext[i]}</p>
+                    <p class="sjpentagram">${obj.sjpentagram[i]}</p>
+                    <p class="sjfreepopulation">${obj.sjfreepopulation[i]}</p>
+                    <p class="sjfree">${obj.sjfree[i]}</p>
+                    
+                </div>
+
+                <div class="sjcourse2 sjsf"> 
+                    <img class="sjchargeimage" src="${obj.sjchargeimage[i]}">
+                    <p class="sjchargetext">${obj.sjchargetext[i]}</p>
+                    <p class="sjpentagram">${obj.sjpentagram[i]}</p>
+                    <p class="sjchargepopulation">${obj.sjchargepopulation[i]}</p>
+                    <p class="sjcharge">${obj.sjcharge[i]}</p>
+                    
+                </div>
+                
+                <div class="sjcourse3 sjhy"> 
+                    <img class="sjvipimage" src="${obj.sjvipimage[i]}">
+                    <p class="sjviptext">${obj.sjviptext[i]}</p>
+                    <p class="sjpentagram">${obj.sjpentagram[i]}</p>
+                    <p class="sjchargepopulation">${obj.sjchargepopulation[i]}</p>
+                    <p class="sjcharge">${obj.sjcharge[i]}</p>
+                    <div class="sjvip">${obj.sjvip[i]} </div>
+                    <div class="sjvipcharge">${obj.sjvipcharge[i]} </div>
+                </div>
+`
+        }
+
+    </script>
+</body>
+</html>

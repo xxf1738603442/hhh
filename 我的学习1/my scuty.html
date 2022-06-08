@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的学习</title>
+		<link rel="stylesheet" type="text/css" href="my%20scuty.css"/>
+		<!-- <script src="my%20souty.js" type="text/javascript" charset="utf-8"></script> -->
+		<script src="../jquery/jquery-3.3.1.min.js"></script>
+		<link rel="icon" type="image/x-icon" href="../imgx/logo.png">
+		<style>
+			.wenzi a img{
+				width: 20px;
+				height: 20px;
+			}
+			.wenzi span{
+				display: inline-block;
+				width: 50px;
+			}
+			.wenzi{
+				margin-top: 10px;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div class="box">
+			
+			<div class="top">
+				<a href="#">我的学习</a>
+			</div>
+			
+			<div class="xuan">
+				<div><span class="ke">我的课程</span></div>
+				<div><span class="wei">我的微专业</span></div>
+			</div>
+			
+			<div class="zhao">
+				<img src="1.png" >
+				<span class="s1">未开始学习哦~</span>
+				<span class="s2">未学习微专业哦~</span>
+			</div>
+			
+			<div class="anniu">
+				<a href="../首页.html" class="an"><span>去发现值得学的课程</span></a>
+				<a href="../HTML/professional.html" class="bn"><span>去发现精彩微专业</span></a>
+			</div>
+			
+			<div class="di">
+				
+				<div class="wenzi"><a href="../首页.html"><img src="首页.png" ></a><span>首页</span></div>
+				
+				<div class="wenzi"><a href="#"><img src="阅读.png" ></a><span>我的学习</span></div>
+				
+				<div class="wenzi"><a href="../详情/account.html"><img src="小人.png" ></a><span>账号</span></div>
+			</div>
+		</div>
+
+
+		<script>
+			$(function(){
+				$(".ke").click(function(){
+					// alert(1)
+					$(".an>span").css({"display":"block"})
+					$(".bn>span").css({"display":"none"})
+					$(".wei").css({"border-bottom":"none","color":""})
+					$(".ke").css({"border-bottom":"3px solid #ff0000","color":"red"})
+					$(".s1").css({"display":"block"})
+					$(".s2").css({"display":"none"})
+
+				})
+				$(".wei").click(function(){
+					$(".an>span").css({"display":"none"})
+					$(".bn>span").css({"display":"block"})
+					$(".ke").css({"border-bottom":"none","color":"#969698"})
+					$(".wei").css({"border-bottom":"3px solid #ff0000","color":"red"})
+					$(".s1").css({"display":"none"})
+					$(".s2").css({"display":"block"})
+				})
+			})
+		</script>
+	</body>
+</html>
